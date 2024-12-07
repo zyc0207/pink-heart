@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>粉色的心</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #fff;
+    }
+    .heart {
+      width: 100px;
+      height: 100px;
+      position: relative;
+      background-color: #ff69b4;
+      transform: rotate(-45deg);
+      margin: auto;
+    }
+    .heart:before, .heart:after {
+      content: '';
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: #ff69b4;
+    }
+    .heart:before {
+      left: 50px;
+      top: 0;
+    }
+    .heart:after {
+      top: -50px;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="heart"></div>
+</body>
+</html>
